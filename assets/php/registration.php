@@ -42,8 +42,8 @@ ob_start();
 <?php
 $body = ob_get_contents();
 
-$to = 'you@domain.com';
-$toname = 'Your Name';
+$to = 'ffejwright@yahoo.com';
+$toname = 'Ryan Dekich';
 //$anotheraddress = 'email@example.com';
 //$anothername = 'Another Name';
 
@@ -59,7 +59,7 @@ $mail->AddAddress($to ,$toname); // Put your email
 $mail->WordWrap = 50;
 $mail->IsHTML(true);
 
-$mail->Subject  =  "Demo Form: Registration form submitted";
+$mail->Subject  =  "Registration form submitted";
 $mail->Body     =  $body;
 $mail->AltBody  =  "Registration Request\n\n Name: ".$name."\n Phone: ".$phone."\n\n ".$message;
 
