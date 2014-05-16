@@ -35,8 +35,8 @@ ob_start();
 <?php
 $body = ob_get_contents();
 
-$to = 'you@domain.com';
-$toname = 'Your Name';
+$to = 'jkbroking@msn.com';
+$toname = 'Kelly Broking';
 //$anotheraddress = 'email@example.com';
 //$anothername = 'Another Name';
 
@@ -52,7 +52,7 @@ $mail->AddAddress($to ,$toname); // Put your email
 $mail->WordWrap = 50;
 $mail->IsHTML(true);
 
-$mail->Subject  =  "Demo Form:  Contact form submitted";
+$mail->Subject  =  "Contact form submitted";
 $mail->Body     =  $body;
 $mail->AltBody  =  $message;
 

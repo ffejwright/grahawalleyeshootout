@@ -21,8 +21,8 @@ ob_start();
 <?php
 $body = ob_get_contents();
 
-$to = 'ffejwright@yahoo.com';
-$toname = 'Ryan Dekich';
+$to = 'jkbroking@msn.com';
+$toname = 'Kelly Broking';
 //$anotheraddress = 'email@example.com';
 //$anothername = 'Another Name';
 
