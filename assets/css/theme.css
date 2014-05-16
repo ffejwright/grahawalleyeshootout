@@ -920,7 +920,7 @@ form.subscribe .subscribe-error {color: red;}
 }
 
 .logo {float: left;}
-.logo img {height: 49px; margin-top: 25px;}
+.logo img {height: 80px; margin-top: 10px;}
 
 .header,
 .header > .container,
