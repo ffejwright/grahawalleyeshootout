@@ -51,47 +51,30 @@
             <!-- form -->
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                <h4 class="modal-title" id="myModalLabel">Register</h4>
+                <h4 class="modal-title" id="myModalLabel">Online Registration</h4>
             </div>
-            <div class="modal-body">
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="RXVLYTXSMYQSE">
+                <div class="modal-body">
 
-                <form name="regitration" method="post" action="#regitration" class="af-form" id="af-form-rf">
+                    <h5>Liability Release – Please read carefully before signing</h5>
+                    <p>By registering online, I agree that I am voluntarily participating in the Grand Rapids Area Chamber of Commerce "Catch, Record, Release" Walleye Tournament.  I agree to assume all risk of injury, death, or loss to personal property, which may result from my participation in this fishing tournament.  I hereby release and forever discharge the Grand Rapids Amateur Hockey Association, its affiliates, the tournament officials, sponsors, City of Grand Rapids, other hosts of the events associated to this event, respective agents, employees, volunteers and guests from all claims, liabilities, damages or loss of any kind resulting from my participation in the tournament or caused by the negligence, strict liability or other fault, actions, inactions or conduct of the released parties.  I further agree to abide by all tournament rules and to accept as final and binding, all decisions of the tournament judges.</p>
 
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="name" id="name-rf" size="30" value="" placeholder="Name *" class="form-control placeholder" />
-                            <label class="error" for="name-rf" id="name_error_rf">Name is required.</label>
-                        </div>
-                    </div>
+                    <p><strong>I HAVE READ THE RELEASE OF LIABLILITY AND TOURNAMENT RULES AND CLEARLY UNDERSTAND ALL OF ITS TERMS AND CONDITIONS.  I ENTER VOLUNTARILY AND WITHOUT ANY RESERVATIONS, PROMISES OR GUARANTY.  THIS WAIVER REPLACES ANY PREVIOUS RELEASE.</strong></p>
 
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="email" id="email-rf" size="30" value="" placeholder="Email *" class="form-control placeholder" />
-                            <label class="error" for="email-rf" id="email_error_rf">Email is required.</label>
-                        </div>
-                    </div>
+                    <p>Photo and Video release:  As a participant in this event, I understand that a photograph or videotape may be taken of me during the course of the tournament.  I agree that any photo, video, or likeness of me may be used for commercial purposes by tournament organizers, sponsors, and/or the news media without royalties or prior consent, unless specified in writing prior to the event start.</p>  
 
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <input type="text" name="phone" id="phone-rf" size="30" value="" placeholder="Phone *" class="form-control placeholder" />
-                            <label class="error" for="phone-rf" id="phone_error_rf">Phone is required.</label>
-                        </div>
-                    </div>
+                    <p>This is a Catch, Record, Release Tournament and I understand that I need to provide my own digital camera that has a date and time feature and that is compatible for a SD memory card to participate.  A formatted SD memory card will be provided to me for tournament use.</p>
 
-                    <div class="af-outer af-required">
-                        <div class="form-group af-inner">
-                            <textarea name="message" id="input-message-rf" cols="30" placeholder="Message *" class="form-control placeholder"></textarea>
-                            <label class="error" for="input-message-rf" id="message_error_rf">Message is required.</label>
-                        </div>
-                    </div>
-
-                </form>
-
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-theme-sm btn-theme" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-theme-sm btn-theme btn-theme-primary" id="submit_btn_rf">Register</button>
-            </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-theme-sm btn-theme" data-dismiss="modal">Close</button>
+                    
+                    <a class="btn btn-theme-sm btn-theme btn-theme-primary" target="_blank" href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=RXVLYTXSMYQSE">Register</a>
+                    <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                </div>
+            </form>
             <!-- /form -->
         </div>
     </div>
@@ -116,7 +99,7 @@
                     <li><a href="#schedule">Schedule</a></li>
                     <li><a href="#speackers">Speakers</a></li>
                     <li><a href="#sponsors">Sponsors</a></li>
-                    <li><a href="#price">Price</a></li>
+                    <li><a href="#registration">Registration</a></li>
                     <li><a href="#location">Location</a></li>
                 </ul>
             </nav>
@@ -146,7 +129,7 @@
                                     <div class="countdown-wrapper">
                                         <div id="defaultCountdown" class="defaultCountdown clearfix"></div>
                                     </div>
-                                    <a class="btn btn-theme btn-theme-primary slide-btn" data-toggle="modal" data-target="#myModal" href="#">regıster now!</a>
+                                    <a class="btn btn-theme btn-theme-primary slide-btn" href="#registration">register now!</a>
                                 </div>
                             </div>
                         </div>
@@ -161,7 +144,7 @@
                                         <div class="countdown-wrapper">
                                             <div id="defaultCountdown2" class="defaultCountdown clearfix"></div>
                                         </div>
-                                        <a class="btn btn-theme btn-theme-primary slide-btn" data-toggle="modal" data-target="#myModal" href="#">regıster now!</a>
+                                        <a class="btn btn-theme btn-theme-primary slide-btn" href="#registration">register now!</a>
                                     </div>
                                 </div>
                             </div>
@@ -988,7 +971,7 @@
                         </ul>
 
                         <p class="btn-theme-group">
-                            <a class="btn btn-theme btn-theme-primary" data-toggle="modal" data-target="#myModal" href="#">Register Now</a>
+                            <a class="btn btn-theme btn-theme-primary" href="#registration">Register Now</a>
                             <a class="btn btn-theme" href="#">Speakers</a>
                         </p>
 
@@ -1281,18 +1264,18 @@
         <!-- /Last tweet -->
 
         <!-- Price Table -->
-        <section class="page-section" id="price">
+        <section class="page-section" id="registration">
             <div class="container">
-                <h3 class="section-title text-center">Buy Your Ticket and Register <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper tellus sit amet nibh fringilla.</small></h3>
+                <h3 class="section-title text-center">Register <small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam semper tellus sit amet nibh fringilla.</small></h3>
                 <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
                         <div class="price-table">
                             <div class="price-table-header">
                                 <div class="price-label">
-                                    <h3 class="price-label-title">One Day Ticket</h3>
+                                    <h3 class="price-label-title">Online Registration</h3>
                                 </div>
                                 <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">20</span><span class="price-per"> / month</span>
+                                    <span class="price-unit">$</span><span class="price-number">300</span><span class="price-per"> / month</span>
                                     <small>your tickets will come to your mails</small>
                                 </div>
                             </div>
@@ -1302,20 +1285,20 @@
                                 <div class="price-table-row">Free WiFi at the Conference</div>
                                 <div class="price-table-row">Conference lunch Coffee/Snacks</div>
                                 <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" data-toggle="modal" data-target="#myModal" href="#">Register</a>
+                                    <a class="btn btn-theme btn-theme-invert" data-toggle="modal" data-target="#myModal" href="#">Register Online</a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
+                    <div class="col-sm-6 col-md-6 col-lg-6">
                         <div class="price-table">
                             <div class="price-table-header">
                                 <div class="price-label">
-                                    <h3 class="price-label-title">Two Day Ticket</h3>
+                                    <h3 class="price-label-title">Mail-in Registration</h3>
                                 </div>
                                 <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">30</span><span class="price-per"> / month</span>
+                                    <span class="price-unit">$</span><span class="price-number">300</span><span class="price-per"> / month</span>
                                     <small>your tickets will come to your mails</small>
                                 </div>
                             </div>
@@ -1325,57 +1308,13 @@
                                 <div class="price-table-row">Free WiFi at the Conference</div>
                                 <div class="price-table-row">Conference lunch Coffee/Snacks</div>
                                 <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" data-toggle="modal" data-target="#myModal" href="#">Register</a>
+                                    <a class="btn btn-theme btn-theme-invert" data-toggle="modal" data-target="#myModal" href="#">Download Registration Form</a>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="price-table">
-                            <div class="price-table-header">
-                                <div class="price-label">
-                                    <h3 class="price-label-title">Three Day Ticket</h3>
-                                </div>
-                                <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">40</span><span class="price-per"> / month</span>
-                                    <small>your tickets will come to your mails</small>
-                                </div>
-                            </div>
-                            <div class="price-table-rows">
-                                <div class="price-table-row">One Day Sccess</div>
-                                <div class="price-table-row">Full-access to all Sessions</div>
-                                <div class="price-table-row">Free WiFi at the Conference</div>
-                                <div class="price-table-row">Conference lunch Coffee/Snacks</div>
-                                <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" data-toggle="modal" data-target="#myModal" href="#">Register</a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3">
-                        <div class="price-table">
-                            <div class="price-table-header">
-                                <div class="price-label">
-                                    <h3 class="price-label-title">One Day Ticket</h3>
-                                </div>
-                                <div class="price-value">
-                                    <span class="price-unit">$</span><span class="price-number">50</span><span class="price-per"> / month</span>
-                                    <small>your tickets will come to your mails</small>
-                                </div>
-                            </div>
-                            <div class="price-table-rows">
-                                <div class="price-table-row">One Day Sccess</div>
-                                <div class="price-table-row">Full-access to all Sessions</div>
-                                <div class="price-table-row">Free WiFi at the Conference</div>
-                                <div class="price-table-row">Conference lunch Coffee/Snacks</div>
-                                <div class="price-table-row-bottom">
-                                    <a class="btn btn-theme btn-theme-invert" data-toggle="modal" data-target="#myModal" href="#">Register</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 <hr class="page-divider half"/>
                 <h3 class="section-title text-center small-bottom">lets see venue <small></small></h3>
