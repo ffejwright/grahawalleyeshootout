@@ -650,6 +650,10 @@ fieldset[disabled] .btn-theme.active {
     font-size: 14px;
 }
 
+.about-event { 
+    display: none;
+}
+
 .about-event .btn-theme-group .btn-theme {
     margin-right: 15px;
 }
@@ -682,6 +686,12 @@ fieldset[disabled] .btn-theme.active {
     border-radius: 0;
     border-color: #e9ecef;
     background-color: #ffffff;
+}
+
+section.subscribe,
+section.recent-posts,
+section.twitter {
+    display: none;
 }
 
 form.subscribe {
@@ -832,6 +842,29 @@ form.subscribe .subscribe-error {color: red;}
 .price-table-row-bottom .btn {
     padding: 8px 30px;
     font-size: 14px;
+}
+
+/* Results table
+/* ========================================================================== */
+
+.results-table {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+    .row [class*="col-sm"] .price-table {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .row [class*="col-sm"] .price-table {
+        margin-bottom: 0;
+    }
+    .row [class*="col-sm"] + [class*="col-sm"] .price-table {
+        margin-top: 50px;
+    }
 }
 
 /* Header
@@ -2447,6 +2480,10 @@ form.subscribe .subscribe-error {color: red;}
 
 /* Media / Testimonails
 /* ========================================================================== */
+
+.testimonials {
+    display: none;
+}
 
 .testimonial {
     max-width: 700px;
